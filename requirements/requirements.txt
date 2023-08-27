@@ -19,3 +19,13 @@ psycopg2-binary==2.9.2
 python-dotenv==0.19.2
 s3fs==2022.1.0
 zulip==0.8.2
+
+torch
+torchvision
+monai>=1.2.0rc1
+generative @ git+https://github.com/Project-MONAI/GenerativeModels.git
+tqdm
+scikit-image
+matplotlib
+nibabel
+pillow
