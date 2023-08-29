@@ -29,7 +29,7 @@ You will need:
 
 Clone this repository (requires git ssh keys)
 
-    git clone --recursive ssh://git@git.fraunhofer.pt/ControlNet/controlnet.git
+    git clone --recursive git@github.com:caetas/controlnet.git
     cd controlnet
 
 Install dependencies
