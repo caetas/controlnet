@@ -24,7 +24,7 @@ train_transforms = transforms.Compose(
         transforms.Lambdad(keys=["slice_label"], func=lambda x: 2.0 if x.sum() > 0 else 1.0),
         transforms.CopyItemsd(keys=["image"], times=1, names=["mask"]),
         transforms.Lambdad(keys=["mask"], func=lambda x: torch.where(x > 0.1, 1, 0)),
-        transforms.FillHolesd(keys=["mask"]),
+        #transforms.FillHolesd(keys=["mask"]),
         transforms.CastToTyped(keys=["mask"], dtype=np.float32)
     ]
 )
